@@ -1,0 +1,26 @@
+symbol: AAPL
+name
+currentPrice
+yield
+optionDate
+optionDaysLeft
+
+[ {
+    strikePrice,
+    ask,
+    bid,
+    avg,
+    premiumValue=((avg + strikePrice) - currentPrice),
+    leverageAmount,
+    leveragePercent = strikePrice/currentPrice * 100,
+    levarageInterest(yield+premium)= (yield/strikePrice * currentPrice) + (premiumValue/strikePrice*100)
+
+    
+}]
+
+
+150
+200
+
+
+2
